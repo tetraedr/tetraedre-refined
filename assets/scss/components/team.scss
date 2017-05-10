@@ -1,0 +1,13 @@
+@import "../vars.scss";
+.team {
+    .columns {
+        max-width: 50em;
+        .column {
+            margin-bottom: 10vh;
+        }
+    }
+}
+
+.text-team {
+    margin-top: 1.5em;
+}

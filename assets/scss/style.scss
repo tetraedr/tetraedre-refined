@@ -1,0 +1,25 @@
+@import "vars.scss";
+
+/* COMPONENTS */
+@import "components/hero.scss";
+@import "components/projets.scss";
+@import "components/team.scss";
+
+/* TYPE */
+
+h1 {
+    font-family: 'Unuvia Pro', sans-serif;
+}
+
+h2 {
+    font-family: 'Unuvia Pro', sans-serif;
+}
+
+/* BODY STYLING */
+
+body {
+    background-color: #fcfcfc;
+}
+
+/* BULMA OVERRIDES */
+

@@ -1,0 +1,15 @@
+$green      : #04DCA2;
+$white      : #FFFFFF;
+$lightgrey  : darken(#FFF, 2%);
+$grey       : #58595B;
+$blue       : #09A8FA;
+$red        : #FF5656;
+
+$main-font  : "Roboto", sans serif;
+
+$mobile_portrait: "(max-width: 500px) and (orientation: portrait)";
+$tablet_portrait: "(max-width: 1024px) and (orientation: portrait)";
+$tablet: "(max-width: 1024px) and (orientation: landscape)";
+$mobile: "(max-width: 800px) and (orientation: landscape)";
+$middle: "(max-width: 1100px)";
+$desktop: "(min-width: 1111px)";

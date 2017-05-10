@@ -1,0 +1,74 @@
+/* COMPONENTS */
+.logo-header {
+  width: 65%; }
+
+.title-header {
+  font-size: 2.5em;
+  color: #000; }
+
+.hero {
+  height: 100vh;
+  background-position-y: -2em;
+  background-position-x: -2em;
+  padding: 0; }
+
+.hero-img {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../svg/bg-vertical.svg");
+  background-size: cover;
+  padding: 2em; }
+
+.arrow-scroll {
+  position: absolute;
+  left: calc(50% - 7.5px);
+  bottom: 4%;
+  max-width: 15px; }
+
+.symbol-hero {
+  height: 30vh; }
+
+.title {
+  text-transform: none !important;
+  font-weight: 600; }
+
+.projets .columns {
+  max-width: 50em; }
+  .projets .columns .box {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .projets .columns .tile {
+    min-width: 40%;
+    margin-bottom: 4em; }
+
+.center-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+
+.team .columns {
+  max-width: 50em; }
+  .team .columns .column {
+    margin-bottom: 10vh; }
+
+.text-team {
+  margin-top: 1.5em; }
+
+/* TYPE */
+h1 {
+  font-family: 'Unuvia Pro', sans-serif; }
+
+h2 {
+  font-family: 'Unuvia Pro', sans-serif; }
+
+/* BODY STYLING */
+body {
+  background-color: #fcfcfc; }
+
+/* BULMA OVERRIDES */

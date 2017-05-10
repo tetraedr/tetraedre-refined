@@ -1,0 +1,28 @@
+@import "../vars.scss";
+
+.title {
+    text-transform: none !important;
+    font-weight: 600;
+}
+
+.projets {
+    .columns {
+        max-width: 50em;
+        .box {
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .tile {
+            min-width: 40%;
+            margin-bottom: 4em;
+        }
+    }
+}
+
+.center-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

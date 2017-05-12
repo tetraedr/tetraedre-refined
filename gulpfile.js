@@ -1,10 +1,11 @@
-var gulp     = require('gulp'),
-    wiredep  = require('wiredep').stream,
-    sass     = require('gulp-sass'),
-    cssmin   = require('gulp-cssmin'),
-    rename   = require('gulp-rename'),
-    sassGlob = require('gulp-sass-glob'),
-    plumber  = require('gulp-plumber');
+var gulp        = require('gulp'),
+    wiredep     = require('wiredep').stream,
+    sass        = require('gulp-sass'),
+    cssmin      = require('gulp-cssmin'),
+    rename      = require('gulp-rename'),
+    sassGlob    = require('gulp-sass-glob'),
+    plumber     = require('gulp-plumber'),
+    browserSync = require('browser-sync').create();
 
 gulp.task('wiredep', function () {
   gulp.src('*.html')
@@ -39,3 +40,26 @@ gulp.task('mini', function () {
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('assets/css'));
 });
+
+
+
+// Static Server + watching scss/html files
+gulp.task('serve', ['sass'], function() {
+
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch("assets/scss/*.scss", ['sass']);
+    gulp.watch("*.html").on('change', browserSync.reload);
+});
+
+// Compile sass into CSS & auto-inject into browsers
+gulp.task('sass', function() {
+    return gulp.src("assets/scss/*.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("assets/css"))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('default', ['serve']);

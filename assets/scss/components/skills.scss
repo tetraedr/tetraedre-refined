@@ -1,0 +1,74 @@
+@import "../vars.scss";
+
+.skills {
+    .title {
+        margin-bottom: 2em !important;
+    }
+    ul {
+        width: 96%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .separator {
+            width: 1px;
+            height: 150px;
+            background-color: #000;
+            opacity: .25;
+        }
+
+        li {
+            flex:1;
+            &:last-child {
+                
+            }
+
+            .subtitle {
+                color: #000;
+                text-transform: none;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.number-list {
+    font-size: 3em;
+}
+
+.list-text {
+    font-size: 1.2em;
+    text-transform: none;
+}
+
+
+@media #{$mobile} {
+    .skills {
+        ul {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 3em;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .skills {
+        ul {
+            flex-direction: column;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .skills {
+        ul {
+            flex-direction: row;
+        }
+    }
+}

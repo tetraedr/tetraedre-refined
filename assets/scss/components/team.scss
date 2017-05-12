@@ -1,13 +1,35 @@
 @import "../vars.scss";
 .team {
+    .title {
+        margin-bottom: 2em;
+    }
     .columns {
-        max-width: 50em;
+        max-width: 70vw;
+        flex-wrap:wrap;
+        align-items: stretch;
         .column {
             margin-bottom: 10vh;
+
+            .title {
+                margin-bottom: .75em !important;
+            }
         }
     }
 }
 
 .text-team {
     margin-top: 1.5em;
+}
+
+.container-team-pic {
+    width: 100%;
+    min-height: 15em;
+    max-height: 25em;
+    //background-color: $grey-lighter;
+    margin-bottom: 20px;
+}
+
+.martin {
+    background-image: url('../img/martin-pic.jpg');
+    background-size: cover;
 }

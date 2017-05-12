@@ -2,24 +2,35 @@
 
 /* COMPONENTS */
 @import "components/hero.scss";
+@import "components/skills.scss";
 @import "components/projets.scss";
 @import "components/team.scss";
+@import "components/contact.scss";
 
 /* TYPE */
 
 h1 {
-    font-family: 'Unuvia Pro', sans-serif;
+    font-family: "univia-pro", sans-serif;
 }
 
 h2 {
-    font-family: 'Unuvia Pro', sans-serif;
+    font-family: "univia-pro", sans-serif;
 }
 
 /* BODY STYLING */
 
 body {
-    background-color: #fcfcfc;
+    //background-color: #fcfcfc;
 }
 
 /* BULMA OVERRIDES */
 
+.section {
+    margin-top: 6em;
+}
+
+.columns {
+    margin-left: 0rem;
+    margin-right: 0rem; 
+    margin-top: 0rem; 
+}

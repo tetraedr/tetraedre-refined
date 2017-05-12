@@ -6,6 +6,7 @@
 @import "components/projets.scss";
 @import "components/team.scss";
 @import "components/contact.scss";
+@import "components/footer.scss";
 
 /* TYPE */
 
@@ -17,10 +18,18 @@ h2 {
     font-family: "univia-pro", sans-serif;
 }
 
-/* BODY STYLING */
+/* GLOBAL STYLING */
 
 body {
     //background-color: #fcfcfc;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visble {
+    display: visible !important;
 }
 
 /* BULMA OVERRIDES */
@@ -33,4 +42,14 @@ body {
     margin-left: 0rem;
     margin-right: 0rem; 
     margin-top: 0rem; 
+}
+
+/* MEDIA QUERIES */
+
+@media #{$desktop} {
+    .section {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
 }

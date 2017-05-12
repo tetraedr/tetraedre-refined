@@ -77,9 +77,10 @@
     margin-right: 0; } }
 
 .skills .title {
-  margin-bottom: 2em !important; }
+  margin-bottom: 4em !important; }
 
 .skills ul {
+  margin-top: 5em;
   width: 96%;
   margin: 0 auto;
   display: flex;
@@ -128,7 +129,6 @@
 .projets {
   padding: 0em !important; }
   .projets .title {
-    padding: 0rem 1.5rem;
     margin-bottom: 2em !important; }
   .projets .columns {
     max-width: 70vw;
@@ -163,6 +163,12 @@
   width: 100%;
   justify-content: center; }
 
+.project-open {
+  flex: 10; }
+
+.project-min {
+  flex: .1; }
+
 @media (min-width: 769px) {
   .projets .columns {
     max-width: 100vw; } }
@@ -170,6 +176,10 @@
 @media (max-width: 768px) {
   .projets .columns {
     max-width: 100vw; } }
+
+@media (min-width: 1000px) {
+  .projets .box img {
+    width: 50% !important; } }
 
 .team .title {
   margin-bottom: 2em; }
@@ -212,6 +222,39 @@
   width: 100%;
   padding: 1em; }
 
+footer {
+  width: 100vw;
+  position: relative; }
+  footer .footer-left {
+    flex: 2; }
+    footer .footer-left img {
+      width: 25%; }
+  footer .footer-right {
+    flex: 1; }
+    footer .footer-right ul {
+      width: 100%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      footer .footer-right ul li {
+        height: 30px; }
+        footer .footer-right ul li img {
+          height: 35px; }
+  footer .row-bg {
+    width: 100%;
+    height: 10vh;
+    background-image: url("../img/bg-test.png");
+    background-size: cover;
+    bottom: 0;
+    left: 0; }
+
+.container-footer {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  padding: 5% 10%; }
+
 /* TYPE */
 h1 {
   font-family: "univia-pro", sans-serif; }
@@ -219,7 +262,13 @@ h1 {
 h2 {
   font-family: "univia-pro", sans-serif; }
 
-/* BODY STYLING */
+/* GLOBAL STYLING */
+.hidden {
+  display: none !important; }
+
+.visble {
+  display: visible !important; }
+
 /* BULMA OVERRIDES */
 .section {
   margin-top: 6em; }
@@ -228,3 +277,10 @@ h2 {
   margin-left: 0rem;
   margin-right: 0rem;
   margin-top: 0rem; }
+
+/* MEDIA QUERIES */
+@media (min-width: 1000px) {
+  .section {
+    height: 80vh;
+    display: flex;
+    align-items: center; } }

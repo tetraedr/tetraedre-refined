@@ -21,7 +21,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/bg-test.png");
+  background-image: url("../img/bg-hero.png");
   background-size: cover;
   background-repeat: no-repeat;
   flex: 1; }
@@ -93,18 +93,46 @@
     background-color: #000;
     opacity: .25; }
   .skills ul li {
-    flex: 1; }
+    flex: 1;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    min-width: 35%; }
     .skills ul li .subtitle {
       color: #000;
       text-transform: none;
       font-family: 'Montserrat', sans-serif;
       font-weight: 400; }
 
+.skills-wrap-desktop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.skills-img {
+  height: 90vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg-skills.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1; }
+
+.skills-content {
+  flex: 1; }
+
+.wrap-skills {
+  padding: 2em; }
+
 .number-list {
-  font-size: 3em; }
+  font-size: 3em;
+  opacity: .2; }
 
 .list-text {
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: none; }
 
 @media (max-width: 768px) {
@@ -119,7 +147,8 @@
 
 @media (min-width: 1000px) {
   .skills ul {
-    flex-direction: row; } }
+    flex-direction: row;
+    flex-wrap: wrap; } }
 
 .title {
   text-transform: none !important;
@@ -156,18 +185,126 @@
     .projets .columns .tile {
       min-width: 40%;
       max-width: 100%;
-      margin-bottom: 0em; }
+      margin-bottom: 0em;
+      transition: all 150ms ease-in-out; }
+
+.title-projets {
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif; }
+
+.projets-wrap-desktop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.project-showcase-container {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden; }
+
+.projets-img {
+  height: 90vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg-projets.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1; }
+
+.projets-content {
+  flex: 1; }
+
+.projets-wrap {
+  padding: 3em; }
 
 .center-wrap {
   display: flex;
   width: 100%;
   justify-content: center; }
 
-.project-open {
-  flex: 10; }
+.wrap-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .wrap-list li {
+    margin-bottom: 1.2em;
+    opacity: .5;
+    transition: all 250ms ease-in-out; }
+    .wrap-list li:hover {
+      opacity: 1; }
+    .wrap-list li:last-child {
+      margin-bottom: 0em; }
 
-.project-min {
-  flex: .1; }
+.project-showcase-container p {
+  margin-top: 1.2em; }
+
+.container-projet {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 250ms ease-in-out; }
+
+.logo-projet {
+  width: 50%; }
+
+.btn-projet {
+  padding: 15px 30px;
+  border: 1px solid #000;
+  margin-top: 1.5em;
+  color: #000; }
+
+.icon-mutualab {
+  position: absolute;
+  bottom: -50em;
+  right: -25em;
+  transform: rotate(-25deg); }
+
+.detail-freelance {
+  position: absolute;
+  background-image: url("../svg/freelance-overlay.svg");
+  background-color: #ff6666;
+  height: 20em;
+  width: 100%;
+  bottom: -40em; }
+
+.detail-norauto {
+  position: absolute;
+  height: 20em;
+  width: 100%;
+  bottom: -40em; }
+  .detail-norauto .norauto-yellow {
+    background-color: #ffcd00;
+    height: 4em;
+    width: 100%; }
+  .detail-norauto .norauto-blue {
+    background-color: #0b065e;
+    height: 16em;
+    width: 100%; }
+
+.detail-optimizme {
+  position: absolute;
+  height: 20em;
+  width: 100%;
+  bottom: -40em; }
+  .detail-optimizme .optimizme-orange {
+    background-color: #ff8900;
+    height: 12em;
+    width: 100%; }
+  .detail-optimizme .optimizme-grey {
+    background-color: #333333;
+    height: 6em;
+    width: 100%; }
+  .detail-optimizme .optimizme-lightgrey {
+    background-color: #f2f2f2;
+    height: 4em;
+    width: 100%; }
 
 @media (min-width: 769px) {
   .projets .columns {
@@ -244,7 +381,7 @@ footer {
   footer .row-bg {
     width: 100%;
     height: 10vh;
-    background-image: url("../img/bg-test.png");
+    background-image: url("../img/bg-hero.png");
     background-size: cover;
     bottom: 0;
     left: 0; }

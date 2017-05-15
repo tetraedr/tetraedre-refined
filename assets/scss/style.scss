@@ -24,6 +24,10 @@ body {
     //background-color: #fcfcfc;
 }
 
+ul {
+    list-style: none !important;
+}
+
 .hidden {
     display: none !important;
 }
@@ -32,11 +36,20 @@ body {
     display: visible !important;
 }
 
+.content {
+    z-index: 1;
+    background-color: #fff;
+}
+
+.wrap-parallax {
+    margin-bottom: 12em;
+}
+
 /* BULMA OVERRIDES */
 
-.section {
-    margin-top: 6em;
-}
+//.section {
+//    margin-top: 6em;
+//}
 
 .columns {
     margin-left: 0rem;

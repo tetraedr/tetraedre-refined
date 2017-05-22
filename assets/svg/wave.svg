@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 25 4'>
+    <defs>
+        <style>
+        .cls-1 {
+            fill: #241f20;
+            animation-name: shift;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-direction: linear;
+        }
+
+        @keyframes shift {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+        </style>
+    </defs>
+    <title>wave</title>
+    <g id="Calque_2" data-name="Calque 2">
+        <g id="Calque_1-2" data-name="Calque 1">
+            <path class="cls-1" d="M45.83,5a6.72,6.72,0,0,1-4.91-2.12,5.76,5.76,0,0,0-8.51,0A6.71,6.71,0,0,1,27.49,5a6.71,6.71,0,0,1-4.91-2.12,5.76,5.76,0,0,0-8.51,0A6.71,6.71,0,0,1,9.16,5,6.71,6.71,0,0,1,4.25,2.88,5.8,5.8,0,0,0,0,1V0A6.71,6.71,0,0,1,4.91,2.12,5.81,5.81,0,0,0,9.16,4a5.81,5.81,0,0,0,4.25-1.88,6.74,6.74,0,0,1,9.82,0A5.81,5.81,0,0,0,27.49,4a5.81,5.81,0,0,0,4.25-1.88,6.75,6.75,0,0,1,9.83,0A5.81,5.81,0,0,0,45.83,4a5.81,5.81,0,0,0,4.26-1.88A6.72,6.72,0,0,1,55,0V1a5.81,5.81,0,0,0-4.26,1.88A6.72,6.72,0,0,1,45.83,5Z" />
+        </g>
+    </g>
+</svg>
+
+<!--background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-50%);}}%3C/style%3E%3Cpath fill='none' stroke='%23FB6754' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");-->

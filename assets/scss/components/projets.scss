@@ -5,10 +5,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.title_section {
+    margin-bottom: 3em !important;
+}
+
 .projets {
     padding: 0em !important;
-    .title {
-        margin-bottom: 2em !important;
+    .title_section {
+        margin-left: 4em;
     }
     .columns {
         max-width: 70vw;
@@ -59,8 +63,26 @@
 }
 
 .title-projets {
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-family: 'Montserrat', sans-serif;
+    &::after {
+        content: "";
+        width: 0px;
+        height: 2px;
+        background-color: #000;
+        transition: all 200ms ease-in;
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+        &::after {
+            content: "";
+            opacity: 1;
+            width: 25px;
+            height: 2px;
+            background-color: #000;
+        }
+    }
 }
 
 .projets-wrap-desktop {
@@ -109,16 +131,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     li {
         margin-bottom: 1.2em;
         opacity: .5;
         transition: all 250ms ease-in-out;
-
         &:hover {
             opacity: 1;
         }
-
         &:last-child {
             margin-bottom: 0em;
         }
@@ -126,8 +145,8 @@
 }
 
 // Projects specific styling
-
 .project-showcase-container {
+    border-left: 1px solid #F3F6F6;
     p {
         margin-top: 1.2em;
     }
@@ -136,10 +155,15 @@
 .container-projet {
     position: relative;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: all 250ms ease-in-out;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 8em 2em;
 }
 
 .logo-projet {
@@ -154,66 +178,88 @@
 }
 
 // Mutualab
+.container-mutualab {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
 .icon-mutualab {
     position: absolute;
-    bottom: -50em;
-    right: -25em;
-    transform: rotate(-25deg);
+    bottom: -17em;
+    right: -10em;
+    transform: rotate(-20deg);
 }
 
 // Freelance Connection
+.container-freelance {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
 .detail-freelance {
     position: absolute;
     background-image: url('../svg/freelance-overlay.svg');
     background-color: #ff6666;
-    height: 20em;
+    height: 16em;
     width: 100%;
-    bottom: -40em;
+    bottom: 0;
 }
 
 // Norauto
+.container-norauto {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
 .detail-norauto {
     position: absolute;
-    height: 20em;
+    height: 16em;
     width: 100%;
-    bottom: -40em;
-
+    bottom: 0;
     .norauto-yellow {
         background-color: #ffcd00;
-        height: 4em;
+        height: 3em;
         width: 100%;
     }
     .norauto-blue {
         background-color: #0b065e;
-        height: 16em;
+        height: 13em;
         width: 100%;
     }
 }
 
 // Optimizme
+.container-optimizme {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
 .detail-optimizme {
     position: absolute;
-    height: 20em;
+    height: 16em;
     width: 100%;
-    bottom: -40em;
-
+    bottom: 0;
     .optimizme-orange {
         background-color: #ff8900;
-        height: 12em;
+        height: 10em;
         width: 100%;
     }
     .optimizme-grey {
         background-color: #333333;
-        height: 6em;
+        height: 4em;
         width: 100%;
     }
     .optimizme-lightgrey {
         background-color: #f2f2f2;
-        height: 4em;
+        height: 2em;
         width: 100%;
     }
 }

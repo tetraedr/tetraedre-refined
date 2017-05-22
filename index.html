@@ -16,7 +16,7 @@
 <body id="#body">
     <div id="fullpage">
         <div class="content">
-            <div class="section hero">
+            <div class="section hero" id="home">
                 <div class="hero-body">
                     <div class="hero-wrap-desktop is-hidden-touch">
                         <div class="container-logo">
@@ -35,13 +35,19 @@
                     <img class="arrow-scroll" src="assets/svg/arrow-scroll.svg" alt="">
                 </div>
             </div>
-            <div class="section hero skills">
+            <div class="section hero skills" id="skills">
                 <div class="hero-body">
                     <div class="skills-wrap-desktop is-hidden-touch">
+                        <div class="container_logo_corner_right">
+                            <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
+                        </div>
                         <div class="skills-img"></div>
                         <div class="skills-content">
                             <div class="wrap-skills">
-                                <h1 class="title">Expertise</h1>
+                                <div class="title_section">
+                                    <h1 class="title">Expertise</h1>
+                                    <div class="wave"></div>
+                                </div>
                                 <ul>
                                     <li>
                                         <div class="number-list">I</div>
@@ -55,7 +61,7 @@
                                     </li>
                                     <li>
                                         <div class="number-list">III</div>
-                                        <p class="subtitle">Responsive Design</p>
+                                        <p class="subtitle">Responsive Webdesign</p>
                                         <p class="list-text">Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Ooboshu cchtenff, lw'nafhagl shogg Tsathoggua bug ph'ep nnnmnahn'</p>
                                     </li>
                                     <li>
@@ -69,11 +75,17 @@
                     </div>
                 </div>
             </div>
-            <div class="section hero projets">
+            <div class="section hero projets" id="projects">
                 <div class="projets-wrap-desktop is-hidden-touch">
                     <div class="projets-content">
-                        <div class="projets-wrap">
+                    <div class="container_logo_corner_left">
+                            <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
+                        </div>
+                        <div class="title_section">
                             <h1 class="title">Projets</h1>
+                            <div class="wave"></div>
+                        </div>
+                        <div class="projets-wrap">
                             <div class="wrap-list">
                                 <ul>
                                     <li class="title-projets mutualab">Mutualab</li>
@@ -90,6 +102,8 @@
                                 <img src="assets/svg/logo-mutualab.svg" alt="Logo Mutualab">
                             </div>
                             <p>Webdesign & web development</p>
+                            <p>Short text about the project and the mutualab.
+                                <br> This text is a short description of the project.</p>
                             <a class="btn-projet" href="mutualab.hmtl">Voir le projet</a>
                             <img class="icon-mutualab" src="assets/svg/icon-rent.svg" alt="Icone Mutualab">
                         </div>
@@ -98,6 +112,8 @@
                                 <img src="assets/svg/logo-freelance-color.svg" alt="Logo Freelance Connection">
                             </div>
                             <p>Identité visuelle, Webdesign & web development</p>
+                            <p>Short text about the project and the mutualab.
+                                <br> This text is a short description of the project.</p>
                             <a class="btn-projet" href="freelance.hmtl">Voir le projet</a>
                             <div class="detail-freelance"></div>
                         </div>
@@ -106,6 +122,8 @@
                                 <img src="assets/img/logo-norauto.png" alt="Logo Freelance Connection">
                             </div>
                             <p>Web development</p>
+                            <p>Short text about the project and the mutualab.
+                                <br> This text is a short description of the project.</p>
                             <a class="btn-projet" href="norauto.hmtl">Voir le projet</a>
                             <div class="detail-norauto">
                                 <div class="norauto-yellow"></div>
@@ -117,6 +135,8 @@
                                 <img src="assets/svg/logo-optimizme-color.svg" alt="Logo Freelance Connection">
                             </div>
                             <p>Identité visuelle, Webdesign & web development</p>
+                            <p>Short text about the project and the mutualab.
+                                <br> This text is a short description of the project.</p>
                             <a class="btn-projet" href="optimizme.hmtl">Voir le projet</a>
                             <div class="detail-optimizme">
                                 <div class="optimizme-lightgrey"></div>
@@ -156,9 +176,12 @@
                     </div>
                 </div>
             </div>
-            <div class="section team">
+            <div class="section team" id="team">
                 <div class="container">
-                    <h1 class="title">Equipe</h1>
+                    <div class="title_section">
+                        <h1 class="title">Equipe</h1>
+                        <div class="wave"></div>
+                    </div>
                     <div class="center-wrap">
                         <div class="columns">
                             <div class="column">
@@ -177,9 +200,12 @@
                     </div>
                 </div>
             </div>
-            <div class="section contact">
+            <div class="section contact" id="contact">
                 <div class="container">
-                    <h1 class="title">Contact</h1>
+                    <div class="title_section">
+                        <h1 class="title">Contact</h1>
+                        <div class="wave"></div>
+                    </div>
                     <div class="center-wrap">
                         <form action="">
                             <div class="field">
@@ -215,38 +241,42 @@
                         </form>
                     </div>
                 </div>
+                <footer>
+                    <div class="container-footer">
+                        <div class="footer-left">
+                            <img src="assets/svg/logo-full.svg" alt="Logo Tétraedre">
+                            <ul>
+                                <li>+336 74 14 01 89</li>
+                                <li>contact@tetraed.re</li>
+                            </ul>
+                        </div>
+                        <div class="footer-right">
+                            <ul>
+                                <li><img src="assets/svg/icon-facebook.svg" alt="Tétraèdre Facebook"></li>
+                                <li><img src="assets/svg/icon-twitter.svg" alt="Tétraèdre Twitter"></li>
+                                <li><img src="assets/svg/icon-github.svg" alt="Tétraèdre Github"></li>
+                                <li><img src="assets/svg/icon-linkedin.svg" alt="Tétraèdre Linkedin"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            <footer>
-                <div class="container-footer">
-                    <div class="footer-left">
-                        <img src="assets/svg/logo-full.svg" alt="Logo Tétraedre">
-                        <ul>
-                            <li>+336 74 14 01 89</li>
-                            <li>contact@tetraed.re</li>
-                        </ul>
-                    </div>
-                    <div class="footer-right">
-                        <ul>
-                            <li><img src="assets/svg/icon-facebook.svg" alt="Tétraèdre Facebook"></li>
-                            <li><img src="assets/svg/icon-twitter.svg" alt="Tétraèdre Twitter"></li>
-                            <li><img src="assets/svg/icon-github.svg" alt="Tétraèdre Github"></li>
-                            <li><img src="assets/svg/icon-linkedin.svg" alt="Tétraèdre Linkedin"></li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
         </div>
-        <div class="row-bg"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript " src="assets/js/projects.js "></script>
+    <script type="text/javascript " src="assets/js/scroll.js "></script>
     <script>
     if (screen && screen.width > 999) {
         document.write('<script type="text/javascript" src="assets/js/jquery.fullPage.min.js"><\/script>');
     }
     </script>
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
-    <script>$(document).ready(function() { $('#fullpage').fullpage(); });</script>
+    <script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage();
+    });
+    </script>
 </body>
 
 </html>

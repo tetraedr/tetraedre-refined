@@ -1,8 +1,5 @@
 @import "../vars.scss";
 .skills {
-    .title {
-        margin-bottom: 4em !important;
-    }
     ul {
         margin-top: 5em;
         width: 96%;
@@ -69,6 +66,30 @@
 .list-text {
     font-size: 1em;
     text-transform: none;
+}
+
+.container_logo_corner_right {
+    position: fixed;
+    right: 2em;
+    top: 4em;
+    width: 3%;
+
+    img {
+        width: 100%;
+        opacity: .2;
+    }
+}
+
+.container_logo_corner_left {
+    position: absolute;
+    left: 2em;
+    top: 4em;
+    width: 3%;
+
+    img {
+        width: 100%;
+        opacity: .2;
+    }
 }
 
 @media #{$mobile} {

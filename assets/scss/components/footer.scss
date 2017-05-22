@@ -1,44 +1,47 @@
 @import "../vars.scss";
-
 footer {
     width: 100vw;
-
     .footer-left {
-        flex:2;
-
+        flex: 2;
         img {
             width: 25%;
         }
+        ul {
+            margin-left: 0em;
+            margin-right: 0em;
+            margin-top: 1em;
+        }
     }
     .footer-right {
-        flex:1;
-        
+        flex: 1;
         ul {
             width: 100%;
             display: inline-flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-
+            margin-left: 0em;
             li {
                 height: 30px;
-
-
                 img {
                     height: 35px;
+                    opacity: .3;
+                    transition: all 250ms ease-in-out;
+
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
         }
     }
-
-    
 }
 
 .container-footer {
     display: inline-flex;
     width: 100%;
     align-items: center;
-    padding: 5% 10%;
+    padding: 5% 10% 0% 10%;
 }
 
 .row-bg {

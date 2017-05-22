@@ -1,6 +1,6 @@
 @import "../vars.scss";
 .team {
-    .title {
+    .title_section {
         margin-bottom: 2em;
     }
     .columns {
@@ -8,7 +8,7 @@
         flex-wrap:wrap;
         align-items: stretch;
         .column {
-            margin-bottom: 10vh;
+            //margin-bottom: 10vh;
 
             .title {
                 margin-bottom: .75em !important;

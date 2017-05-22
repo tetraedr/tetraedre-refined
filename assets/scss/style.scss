@@ -61,11 +61,23 @@ ul {
     margin-bottom: 12em;
 }
 
+.fp-tooltip {
+    color: #000 !important; 
+}
+
 /* BULMA OVERRIDES */
 
 //.section {
 //    margin-top: 6em;
 //}
+
+a {
+    color: #000 !important;
+
+    &:visited {
+        color: #000 !important;
+    }
+}
 
 .columns {
     margin-left: 0rem;

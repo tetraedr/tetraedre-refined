@@ -76,7 +76,7 @@
     width: 50%;
     margin-right: 0; } }
 
-.skills ul {
+.skills .list_expertise {
   margin-top: 5em;
   width: 96%;
   margin: 0 auto;
@@ -84,17 +84,17 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap; }
-  .skills ul .separator {
+  .skills .list_expertise .separator {
     width: 1px;
     height: 150px;
     background-color: #000;
     opacity: .25; }
-  .skills ul li {
+  .skills .list_expertise li {
     flex: 1;
     margin-right: 5%;
     margin-bottom: 5%;
     min-width: 35%; }
-    .skills ul li .subtitle {
+    .skills .list_expertise li .subtitle {
       color: #000;
       text-transform: none;
       font-family: 'Montserrat', sans-serif;
@@ -136,32 +136,50 @@
   position: absolute;
   right: 2em;
   top: 4em;
-  width: 3%; }
+  width: 3%;
+  transition: all 250ms ease-in-out; }
   .container_logo_corner_right img {
     width: 100%;
-    opacity: .2; }
+    opacity: .2;
+    transition: all 250ms ease-in-out; }
+  .container_logo_corner_right:hover img {
+    opacity: 1; }
+  .container_logo_corner_right:hover ul {
+    opacity: 1; }
+  .container_logo_corner_right ul {
+    position: absolute;
+    top: 0;
+    right: 4em;
+    opacity: 0;
+    transition: all 250ms ease-in-out; }
 
-.container_logo_corner_left {
-  position: absolute;
-  left: 2em;
-  top: 4em;
-  width: 3%; }
-  .container_logo_corner_left img {
-    width: 100%;
-    opacity: .2; }
+.nav_symbol {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+  .nav_symbol li {
+    display: inline-flex;
+    margin-top: 0 !important;
+    margin-right: 25px;
+    opacity: .5;
+    transition: all 250ms ease-in-out; }
+    .nav_symbol li:hover {
+      opacity: 1; }
+    .nav_symbol li:first-child {
+      margin-right: 0px; }
 
 @media (max-width: 768px) {
-  .skills ul {
+  .skills .list_expertise {
     flex-direction: column; }
-    .skills ul li {
+    .skills .list_expertise li {
       margin-bottom: 3em; } }
 
 @media (min-width: 769px) {
-  .skills ul {
+  .skills .list_expertise {
     flex-direction: column; } }
 
 @media (min-width: 1000px) {
-  .skills ul {
+  .skills .list_expertise {
     flex-direction: row;
     flex-wrap: wrap; } }
 
@@ -176,7 +194,7 @@
 .projets {
   padding: 0em !important; }
   .projets .title_section {
-    margin-left: 4em; }
+    margin-left: 3em; }
   .projets .columns {
     max-width: 70vw;
     flex-wrap: wrap;
@@ -261,9 +279,10 @@
 
 .wrap-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column; }
+  .wrap-list ul {
+    margin-left: 0;
+    margin-top: 0; }
   .wrap-list li {
     margin-bottom: 1.2em;
     opacity: .5;
@@ -274,7 +293,7 @@
       margin-bottom: 0em; }
 
 .project-showcase-container {
-  border-left: 1px solid #F3F6F6; }
+  border-right: 1px solid #F3F6F6; }
   .project-showcase-container p {
     margin-top: 1.2em; }
 
@@ -308,9 +327,9 @@
 
 .icon-mutualab {
   position: absolute;
-  bottom: -17em;
-  right: -10em;
-  transform: rotate(-20deg); }
+  bottom: -22em;
+  left: -10em;
+  transform: rotate(20deg); }
 
 .container-freelance {
   -webkit-transition: all 0.5s ease;
@@ -424,15 +443,25 @@
 footer {
   width: 100vw; }
   footer .footer-left {
-    flex: 2; }
+    position: absolute;
+    bottom: 8em;
+    left: 2em;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center; }
     footer .footer-left img {
-      width: 25%; }
+      width: 50%;
+      padding-right: 1em;
+      border-right: 1px solid #F3F6F6; }
     footer .footer-left ul {
       margin-left: 0em;
       margin-right: 0em;
-      margin-top: 1em; }
+      margin-top: 0em; }
   footer .footer-right {
-    flex: 1; }
+    position: absolute;
+    bottom: 8em;
+    right: 2em; }
     footer .footer-right ul {
       width: 100%;
       display: inline-flex;
@@ -441,9 +470,14 @@ footer {
       align-items: center;
       margin-left: 0em; }
       footer .footer-right ul li {
-        height: 30px; }
+        height: 30px;
+        margin-right: 25px;
+        margin-top: 0px !important; }
+        footer .footer-right ul li:last-child {
+          margin-right: 0;
+          margin-top: -2px !important; }
         footer .footer-right ul li img {
-          height: 35px;
+          height: 25px;
           opacity: .3;
           transition: all 250ms ease-in-out; }
           footer .footer-right ul li img:hover {
@@ -504,7 +538,15 @@ ul {
 .wrap-parallax {
   margin-bottom: 12em; }
 
+.fp-tooltip {
+  color: #000 !important; }
+
 /* BULMA OVERRIDES */
+a {
+  color: #000 !important; }
+  a:visited {
+    color: #000 !important; }
+
 .columns {
   margin-left: 0rem;
   margin-right: 0rem;

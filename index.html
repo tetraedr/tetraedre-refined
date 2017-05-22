@@ -16,7 +16,7 @@
 <body id="#body">
     <div id="fullpage">
         <div class="content">
-            <div class="section hero" id="home">
+            <div class="section hero">
                 <div class="hero-body">
                     <div class="hero-wrap-desktop is-hidden-touch">
                         <div class="container-logo">
@@ -35,11 +35,18 @@
                     <img class="arrow-scroll" src="assets/svg/arrow-scroll.svg" alt="">
                 </div>
             </div>
-            <div class="section hero skills" id="skills">
+            <div class="section hero skills">
                 <div class="hero-body">
                     <div class="skills-wrap-desktop is-hidden-touch">
                         <div class="container_logo_corner_right">
                             <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
+                            <ul class="nav_symbol">
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#team">Equipe</a></li>
+                                <li><a href="#projects">Projets</a></li>
+                                <li><a href="#skills">Expertise</a></li>
+                                <li><a href="#home">Accueil</a></li>
+                            </ul>
                         </div>
                         <div class="skills-img"></div>
                         <div class="skills-content">
@@ -48,7 +55,7 @@
                                     <h1 class="title">Expertise</h1>
                                     <div class="wave"></div>
                                 </div>
-                                <ul>
+                                <ul class="list_expertise">
                                     <li>
                                         <div class="number-list">I</div>
                                         <p class="subtitle">UX Design</p>
@@ -75,11 +82,18 @@
                     </div>
                 </div>
             </div>
-            <div class="section hero projets" id="projects">
+            <div class="section hero projets">
                 <div class="projets-wrap-desktop is-hidden-touch">
-                <div class="container_logo_corner_right">
-                            <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
-                        </div>
+                    <div class="container_logo_corner_right">
+                        <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
+                        <ul class="nav_symbol">
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#team">Equipe</a></li>
+                            <li><a href="#projects">Projets</a></li>
+                            <li><a href="#skills">Expertise</a></li>
+                            <li><a href="#home">Accueil</a></li>
+                        </ul>
+                    </div>
                     <div class="project-showcase-container">
                         <div class="container-mutualab container-projet">
                             <div class="logo-projet">
@@ -176,7 +190,17 @@
                     </div>
                 </div>
             </div>
-            <div class="section team" id="team">
+            <div class="section team">
+                <div class="container_logo_corner_right">
+                    <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
+                    <ul class="nav_symbol">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#team">Equipe</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#skills">Expertise</a></li>
+                        <li><a href="#home">Accueil</a></li>
+                    </ul>
+                </div>
                 <div class="container">
                     <div class="title_section">
                         <h1 class="title">Equipe</h1>
@@ -200,7 +224,17 @@
                     </div>
                 </div>
             </div>
-            <div class="section contact" id="contact">
+            <div class="section contact">
+                <div class="container_logo_corner_right">
+                    <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
+                    <ul class="nav_symbol">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#team">Equipe</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#skills">Expertise</a></li>
+                        <li><a href="#home">Accueil</a></li>
+                    </ul>
+                </div>
                 <div class="container">
                     <div class="title_section">
                         <h1 class="title">Contact</h1>
@@ -274,7 +308,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
     <script>
     $(document).ready(function() {
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+            anchors: ['home', 'skills', 'projects', 'team', 'contact'],
+            //navigation: true,
+            //navigationPosition: 'right',
+            //navigationTooltips: ['Accueil', 'Expertise', 'Projets', 'Equipe', 'Contact'],
+            //showActiveTooltip: false,
+        });
     });
     </script>
 </body>

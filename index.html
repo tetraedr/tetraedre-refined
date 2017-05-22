@@ -25,7 +25,9 @@
                                 <p class="title-hero">Design & développement.</p>
                             </div>
                         </div>
-                        <div class="hero-img"></div>
+                        <div class="container-hero-img">
+                            <div class="hero-img"></div>
+                        </div>
                     </div>
                     <div class="hero-img is-hidden-desktop">
                         <div class="container">
@@ -95,47 +97,61 @@
                         </ul>
                     </div>
                     <div class="project-showcase-container">
-                        <div class="container-mutualab container-projet">
+                        <div class="container-mutualab container-projet ">
                             <div class="logo-projet">
                                 <img src="assets/svg/logo-mutualab.svg" alt="Logo Mutualab">
                             </div>
                             <p>Webdesign & web development</p>
                             <p>Short text about the project and the mutualab.
                                 <br> This text is a short description of the project.</p>
-                            <a class="btn-projet" href="mutualab.hmtl">Voir le projet</a>
+                            <div class="container_btn_project">
+                                <a class="btn-projet" href="mutualab.hmtl">Voir le projet</a>
+                                <div class="btn-projet shadow_btn">Voir le projet</div>
+                            </div>
                             <img class="icon-mutualab" src="assets/svg/icon-rent.svg" alt="Icone Mutualab">
                         </div>
-                        <div class="container-freelance container-projet hidden">
+                        <div class="container-freelance container-projet ">
                             <div class="logo-projet">
                                 <img src="assets/svg/logo-freelance-color.svg" alt="Logo Freelance Connection">
                             </div>
                             <p>Identité visuelle, Webdesign & web development</p>
                             <p>Short text about the project and the mutualab.
                                 <br> This text is a short description of the project.</p>
-                            <a class="btn-projet" href="freelance.hmtl">Voir le projet</a>
+                            <div class="container_btn_project">
+                                <a class="btn-projet" href="freelance.hmtl">Voir le projet</a>
+                                <div class="btn-projet shadow_btn">Voir le projet</div>
+                            </div>
                             <div class="detail-freelance"></div>
                         </div>
-                        <div class="container-norauto container-projet hidden">
+                        <div class="container-norauto container-projet ">
                             <div class="logo-projet">
                                 <img src="assets/img/logo-norauto.png" alt="Logo Freelance Connection">
                             </div>
                             <p>Web development</p>
                             <p>Short text about the project and the mutualab.
                                 <br> This text is a short description of the project.</p>
-                            <a class="btn-projet" href="norauto.hmtl">Voir le projet</a>
+                                <div class="container_btn_project">
+                                <a class="btn-projet" href="norauto.hmtl">Voir le projet</a>
+                                <div class="btn-projet shadow_btn">Voir le projet</div>
+                            </div>
+                            
                             <div class="detail-norauto">
                                 <div class="norauto-yellow"></div>
                                 <div class="norauto-blue"></div>
                             </div>
                         </div>
-                        <div class="container-optimizme container-projet hidden">
+                        <div class="container-optimizme container-projet ">
                             <div class="logo-projet">
                                 <img src="assets/svg/logo-optimizme-color.svg" alt="Logo Freelance Connection">
                             </div>
                             <p>Identité visuelle, Webdesign & web development</p>
                             <p>Short text about the project and the mutualab.
                                 <br> This text is a short description of the project.</p>
-                            <a class="btn-projet" href="optimizme.hmtl">Voir le projet</a>
+                                <div class="container_btn_project">
+                                <a class="btn-projet" href="optimizme.hmtl">Voir le projet</a>
+                                <div class="btn-projet shadow_btn">Voir le projet</div>
+                            </div>
+                            
                             <div class="detail-optimizme">
                                 <div class="optimizme-lightgrey"></div>
                                 <div class="optimizme-grey"></div>
@@ -269,7 +285,7 @@
                             </div>
                             <div class="field">
                                 <p class="control">
-                                    <button class="button is-primary">Submit</button>
+                                    <button class="button fill">Submit</button>
                                 </p>
                             </div>
                         </form>
@@ -286,10 +302,18 @@
                         </div>
                         <div class="footer-right">
                             <ul>
-                                <li><img src="assets/svg/icon-facebook.svg" alt="Tétraèdre Facebook"></li>
-                                <li><img src="assets/svg/icon-twitter.svg" alt="Tétraèdre Twitter"></li>
-                                <li><img src="assets/svg/icon-github.svg" alt="Tétraèdre Github"></li>
-                                <li><img src="assets/svg/icon-linkedin.svg" alt="Tétraèdre Linkedin"></li>
+                                <li>
+                                    <a href="https://www.facebook.com/tetraedre" target="_blank"><img src="assets/svg/icon-facebook.svg" alt="Tétraèdre Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/VincentTetraedr" target="_blank"><img src="assets/svg/icon-twitter.svg" alt="Tétraèdre Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="http://github.com/tetraedr" target="_blank"><img src="assets/svg/icon-github.svg" alt="Tétraèdre Github"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/vincentsandt" target="_blank"><img src="assets/svg/icon-linkedin.svg" alt="Tétraèdre Linkedin"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -298,6 +322,7 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript " src="assets/js/projects.js "></script>
     <script type="text/javascript " src="assets/js/scroll.js "></script>
     <script>
@@ -307,15 +332,17 @@
     </script>
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
     <script>
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            anchors: ['home', 'skills', 'projects', 'team', 'contact'],
-            //navigation: true,
-            //navigationPosition: 'right',
-            //navigationTooltips: ['Accueil', 'Expertise', 'Projets', 'Equipe', 'Contact'],
-            //showActiveTooltip: false,
+    if (screen && screen.width > 999) {
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['home', 'skills', 'projects', 'team', 'contact'],
+                scrollingSpeed: 850,
+                css3: true,
+                easingcss3: 'ease-in-out',
+            });
         });
-    });
+
+    };
     </script>
 </body>
 

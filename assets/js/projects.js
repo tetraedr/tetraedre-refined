@@ -1,38 +1,33 @@
 $('.mutualab').on('mouseover', function() {
-    $('.container-mutualab').removeClass('hidden');
-    $('.container-mutualab').addClass('visible');
+    $('.container-mutualab').css('opacity', '1');
 
-    $('.container-norauto').addClass('hidden');
-    $('.container-freelance').addClass('hidden');
-    $('.container-optimizme').addClass('hidden');
+    $('.container-norauto').css('opacity', '0');
+    $('.container-freelance').css('opacity', '0');
+    $('.container-optimizme').css('opacity', '0');
 });
 
 
 $('.norauto').on('mouseover', function() {
-    $('.container-norauto').removeClass('hidden');
-    $('.container-norauto').addClass('visible');
+    $('.container-norauto').css('opacity', '1');
 
-    $('.container-mutualab').addClass('hidden');
-    $('.container-freelance').addClass('hidden');
-    $('.container-optimizme').addClass('hidden');
+    $('.container-mutualab').css('opacity', '0');
+    $('.container-freelance').css('opacity', '0');
+    $('.container-optimizme').css('opacity', '0');
 });
 
 $('.freelance').on('mouseover', function() {
-    $('.container-freelance').removeClass('hidden');
-    $('.container-freelance').addClass('visible');
+    $('.container-freelance').css('opacity', '1');
     
-    $('.container-mutualab').addClass('hidden');
-    $('.container-norauto').addClass('hidden');
-    $('.container-optimizme').addClass('hidden');
+    $('.container-mutualab').css('opacity', '0');
+    $('.container-norauto').css('opacity', '0');
+    $('.container-optimizme').css('opacity', '0');
 });
 
 
 $('.optimizme').on('mouseover', function() {
-    $('.container-optimizme').removeClass('hidden');
-    $('.container-optimizme').addClass('visible');
+    $('.container-optimizme').css('opacity', '1');
     
-    $('.container-mutualab').addClass('hidden');
-    $('.container-norauto').addClass('hidden');
-    $('.container-freelance').addClass('hidden');
+    $('.container-mutualab').css('opacity', '0');
+    $('.container-norauto').css('opacity', '0');
+    $('.container-freelance').css('opacity', '0');
 });
-

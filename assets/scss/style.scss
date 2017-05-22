@@ -61,15 +61,11 @@ ul {
     margin-bottom: 12em;
 }
 
-.fp-tooltip {
-    color: #000 !important; 
-}
-
 /* BULMA OVERRIDES */
 
-//.section {
-//    margin-top: 6em;
-//}
+.section {
+    padding: 0em !important;
+}
 
 a {
     color: #000 !important;
@@ -84,6 +80,12 @@ a {
     margin-right: 0rem; 
     margin-top: 0rem; 
 }
+
+@keyframes flowUp {
+    from {height: 0vh;}
+    to {height: 90vh;}
+} 
+
 
 /* MEDIA QUERIES */
 

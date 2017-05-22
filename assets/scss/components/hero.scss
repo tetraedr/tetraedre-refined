@@ -18,6 +18,16 @@
     align-items: center;
 }
 
+.container-hero-img {
+    height: 90vh;
+    flex: 1;
+    
+}
+
+.anim-from-bottom {
+    animation: flowUp .250s ease-in-out;
+}
+
 .hero-img {
     width: 100%;
     height: 90vh;
@@ -100,7 +110,7 @@
     }
 
     .hero-img {
-        width: 50%;
+        width: 100%;
         margin-right: 0;
     }
 }

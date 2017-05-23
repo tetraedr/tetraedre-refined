@@ -9,7 +9,6 @@
         flex-wrap:wrap;
         align-items: stretch;
         .column {
-            //margin-bottom: 10vh;
             max-width: 46%;
 
             .title {
@@ -27,7 +26,6 @@
     width: 100%;
     min-height: 15em;
     max-height: 25em;
-    //background-color: $grey-lighter;
     margin-bottom: 20px;
 }
 
@@ -41,11 +39,12 @@
     background-size: cover;
 }
 
+/* MEDIA QUERIES */
+
 
 @media #{$tablet} {
     .team .columns .column {
         max-width: 90%;
-        //padding: 2rem !important;
         margin: 0 auto;
     }
 

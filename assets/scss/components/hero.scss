@@ -24,10 +24,6 @@
     
 }
 
-.anim-from-bottom {
-    //animation: flowUp 1.5s ease-in-out;
-}
-
 .hero-img {
     width: 100%;
     height: 90vh;
@@ -39,7 +35,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1;
-    //padding:2em;
 
     .container {
         padding: 3em;
@@ -101,6 +96,8 @@
         }
     }
 }
+
+/* MEDIA QUERIES */
 
 
 @media #{$desktop} {

@@ -1,10 +1,10 @@
-#Tétraèdre
+# Tétraèdre
 
 Refonte du site de l'agence Web Tétraèdre
 
 http://tetraed.re/
 
-###To-do
+### To-do
 
 - [X] Responsive
 - [ ] Ajouter contenu réel

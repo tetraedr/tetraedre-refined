@@ -4,12 +4,14 @@ footer {
 
     .footer-left {
         position: absolute;
-        bottom: 3em;
+        bottom: 2em;
         left: 2em;
         display: flex;
         width: 20%;
+        background-color: #fff;
         justify-content: space-between;
         align-items: center;
+        z-index: 5;
         img {
             width: 50%;
             padding-right: 1em;
@@ -23,8 +25,9 @@ footer {
     }
     .footer-right {
         position: absolute;
-        bottom: 3em;
+        bottom: 2em;
         right: 2em;
+        z-index: 5;
         ul {
             width: 100%;
             display: inline-flex;
@@ -62,9 +65,9 @@ footer {
 
 .row-bg {
     width: 100%;
-    height: 12em;
-    z-index: -1;
-    position: fixed;
+    height: .5em;
+    z-index: 0;
+    position: absolute;
     background-image: url("../img/bg-hero.png");
     background-size: cover;
     //position: absolute;

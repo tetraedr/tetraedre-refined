@@ -8,6 +8,8 @@
 @import "components/contact.scss";
 @import "components/footer.scss";
 
+@import "components/project.scss";
+
 /* TYPE */
 
 h1 {
@@ -43,6 +45,10 @@ ul {
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+.rotate90 {
+    transform: rotate(-90deg);
 }
 
 .content {

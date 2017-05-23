@@ -289,8 +289,16 @@
 @media #{$tablet} {
     .projets {
         .columns {
-            max-width: 100vw;
+            max-width: none;
+            width: 90%;
+
+            .box {
+                img {
+                    width: 50%;
+                }
+            }
         }
+
     }
 }
 
@@ -298,6 +306,11 @@
     .projets {
         .columns {
             max-width: 100vw;
+            .box {
+                img {
+                    width: 70%;
+                }
+            }
         }
         .title_section {
             margin-left: 2em;

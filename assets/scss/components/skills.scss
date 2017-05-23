@@ -123,6 +123,25 @@
     }
 }
 
+
+
+@media #{$tablet} {
+    .skills {
+        .list_expertise {
+            flex-direction: row;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .skills {
+        .list_expertise {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
+
 @media #{$mobile} {
     .skills {
         .list_expertise {
@@ -138,22 +157,5 @@
 
     .wrap-skills {
         padding: 0;
-    }
-}
-
-@media #{$tablet} {
-    .skills {
-        .list_expertise {
-            flex-direction: column;
-        }
-    }
-}
-
-@media #{$desktop} {
-    .skills {
-        .list_expertise {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
     }
 }

@@ -44,8 +44,9 @@
 
 @media #{$tablet} {
     .team .columns .column {
-        max-width: 100%;
-        padding: 2rem !important;
+        max-width: 90%;
+        //padding: 2rem !important;
+        margin: 0 auto;
     }
 
     .team {

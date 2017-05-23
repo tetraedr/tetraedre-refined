@@ -15,7 +15,6 @@
 
 <body id="#body">
     <div id="fullpage">
-        <div class="content">
             <div class="section hero">
                 <div class="hero-body">
                     <div class="hero-wrap-desktop is-hidden-touch">
@@ -39,7 +38,7 @@
             </div>
             <div class="section hero skills">
                 <div class="hero-body">
-                    <div class="skills-wrap-desktop ">
+                    <div class="skills-wrap-desktop">
                         <div class="container_logo_corner_right is-hidden-touch">
                             <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
                             <ul class="nav_symbol">
@@ -165,10 +164,10 @@
                         <div class="projets-wrap">
                             <div class="wrap-list">
                                 <ul>
-                                    <li class="title-projets mutualab">Mutualab</li>
-                                    <li class="title-projets freelance">Freelance Connection</li>
-                                    <li class="title-projets norauto">Norauto</li>
-                                    <li class="title-projets optimizme">Optimiz.me</li>
+                                    <li class="title-projets mutualab"><a href="mutualab.html">Mutualab</a></li>
+                                    <li class="title-projets freelance"><a href="freelance.html">Freelance Connection</a></li>
+                                    <li class="title-projets norauto"><a href="norauto.html">Norauto</a></li>
+                                    <li class="title-projets optimizme"><a href="optimizme.html">Optimiz.me</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -189,31 +188,30 @@
                                 </div>
                             </a>
                             <a href="freelance.html">
-                            <div class="tile freelance">
-                                <div class="box is-flex">
-                                    <img src="assets/svg/logo-freelance.svg" alt="">
+                                <div class="tile freelance">
+                                    <div class="box is-flex">
+                                        <img src="assets/svg/logo-freelance.svg" alt="">
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                             <a href="norauto.html">
-                            <div class="tile norauto">
-                                <div class="box is-flex">
-                                    <img src="assets/img/logo-norauto.png" alt="">
+                                <div class="tile norauto">
+                                    <div class="box is-flex">
+                                        <img src="assets/img/logo-norauto.png" alt="">
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                             <a href="optimizme.html">
-                            <div class="tile optimizme">
-                                <div class="box is-flex">
-                                    <img src="assets/svg/logo-optimizme.svg" alt="">
+                                <div class="tile optimizme">
+                                    <div class="box is-flex">
+                                        <img src="assets/svg/logo-optimizme.svg" alt="">
+                                    </div>
                                 </div>
-                            </div>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         <div class="section team">
             <div class="container_logo_corner_right is-hidden-touch">
                 <img src="assets/svg/symbol-black.svg" alt="Tétraedre logo">
@@ -334,17 +332,15 @@
     <script>
     if (screen && screen.width > 999) {
         document.write('<script type="text/javascript" src="assets/js/jquery.fullPage.min.js"><\/script>');
+        document.write('<link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />');
     }
     </script>
-    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullPage.css" />
     <script>
     if (screen && screen.width > 999) {
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 anchors: ['home', 'skills', 'projects', 'team', 'contact'],
                 scrollingSpeed: 850,
-                css3: true,
-                easingcss3: 'ease-in-out',
             });
         });
 

@@ -1,4 +1,4 @@
-$elem1 = $('.container-hero-img');
+/*$elem1 = $('.container-hero-img');
 $elem2 = $('.hero-img');
 var scrollState = 'top';
 
@@ -15,7 +15,7 @@ $(window).scroll(function(){
         scrollState = 'top';
     }
 
-});
+});*/
 
 // Fade element on scroll
 

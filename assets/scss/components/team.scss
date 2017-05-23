@@ -35,3 +35,23 @@
     background-image: url('../img/martin-pic.jpg');
     background-size: cover;
 }
+
+.vincent {
+    background-image: url('../img/vincent-pic.jpg');
+    background-size: cover;
+}
+
+
+@media #{$mobile} {
+    .team .columns .column {
+        max-width: 100%;
+        padding: 2rem !important;
+    }
+
+    .team {
+        margin-top: 5em;
+        .title_section {
+            margin-left: 3em;
+        }
+    }
+}

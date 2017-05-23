@@ -25,7 +25,7 @@
 }
 
 .anim-from-bottom {
-    animation: flowUp .250s ease-in-out;
+    //animation: flowUp 1.5s ease-in-out;
 }
 
 .hero-img {
@@ -76,7 +76,7 @@
 
 .title-hero {
     font-size: 4em;
-    color: lighten(#000, 5%);
+    color: $darkgrey;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     width: auto;
@@ -112,5 +112,11 @@
     .hero-img {
         width: 100%;
         margin-right: 0;
+    }
+}
+
+@media #{$mobile} {
+    .hero-body {
+            padding: 2rem 1.5rem !important;
     }
 }

@@ -6,59 +6,67 @@
     }
     input {
         border-radius: 0px;
-        border: 1px solid #363636;
+        border: 1px solid $darkgrey;
         width: 100%;
         padding: 1.7em;
     }
     textarea {
         border-radius: 0px;
-        border: 1px solid #363636;
+        border: 1px solid $darkgrey;
         width: 100%;
         padding: 1.7em;
     }
     button {
-    position: relative;
-    border-radius: 0px;
-    padding: 1em 2em 2em 2em;
-    font-weight: 700;
-    font-size: 15px;
-    margin-top: 1.5em;
-    letter-spacing: 2px;
-    color: #383736;
-    border: 1px #363636 solid;
-    text-transform: uppercase;
-    outline: 0;
-    overflow: hidden;
-    background: none;
-    z-index: 1;
-    cursor: pointer;
-    transition: 0.08s ease-in;
-    -o-transition: 0.08s ease-in;
-    -ms-transition: 0.08s ease-in;
-    -moz-transition: 0.08s ease-in;
-    -webkit-transition: 0.08s ease-in;
+        position: relative;
+        border-radius: 0px;
+        padding: 1em 2em 2em 2em;
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 1.5em;
+        letter-spacing: 2px;
+        color: #383736;
+        border: 1px $darkgrey solid;
+        text-transform: uppercase;
+        outline: 0;
+        overflow: hidden;
+        background: none;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.08s ease-in;
+        -o-transition: 0.08s ease-in;
+        -ms-transition: 0.08s ease-in;
+        -moz-transition: 0.08s ease-in;
+        -webkit-transition: 0.08s ease-in;
+    }
+    .fill:hover {
+        color: #FFF;
+        border: 2px $darkgrey solid;
+    }
+    .fill:before {
+        content: "";
+        position: absolute;
+        background: $darkgrey;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+    }
+    .fill:hover:before {
+        top: 0;
+    }
 }
 
-.fill:hover {
-    color: #FFF;
-    border: 2px #363636 solid;
+@media #{$mobile} {
+    .contact {
+        margin-top: 5em;
+        form {
+            max-width: 90vw;
+            width: 85%;
+        }
+        .title_section {
+            margin-left: 3em;
+        }
+    }
 }
-
-.fill:before {
-    content: "";
-    position: absolute;
-    background: #363636;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -1;
-    -webkit-transition: top 0.09s ease-in;
-}
-
-.fill:hover:before {
-    top: 0;
-}
-}
-
-

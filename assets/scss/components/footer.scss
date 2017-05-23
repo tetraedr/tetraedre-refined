@@ -1,7 +1,6 @@
 @import "../vars.scss";
 footer {
     width: 100vw;
-
     .footer-left {
         position: absolute;
         bottom: 2em;
@@ -73,4 +72,32 @@ footer {
     //position: absolute;
     bottom: 0;
     left: 0;
+}
+
+@media #{$mobile} {
+    footer {
+        margin-top: 4em;
+        padding-top: 1em;
+        border-top: 1px solid $lightgrey;
+        .container-footer {
+            display: block;
+            padding: 5% 5% 0% 5%;
+        }
+        .footer-left {
+            position: relative;
+            width: 100%;
+            bottom: initial;
+            left: initial;
+            margin-bottom: 3em;
+        }
+        .footer-right {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            right: initial;
+            bottom: initial;
+            width: 90%;
+            margin-bottom: 3em;
+        }
+    }
 }

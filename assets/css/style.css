@@ -80,7 +80,7 @@
     width: 100%;
     margin-right: 0; } }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .hero-body {
     padding: 2rem 1.5rem !important; } }
 
@@ -177,13 +177,17 @@
     .nav_symbol li:first-child {
       margin-right: 0px; }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .skills .list_expertise {
     flex-direction: column; }
     .skills .list_expertise li {
-      margin-bottom: 3em; } }
+      margin-bottom: 3em; }
+  .skills .title_section {
+    margin-left: 0em; }
+  .wrap-skills {
+    padding: 0; } }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   .skills .list_expertise {
     flex-direction: column; } }
 
@@ -407,13 +411,15 @@
     height: 2em;
     width: 100%; }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   .projets .columns {
     max-width: 100vw; } }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .projets .columns {
-    max-width: 100vw; } }
+    max-width: 100vw; }
+  .projets .title_section {
+    margin-left: 2em; } }
 
 @media (min-width: 1000px) {
   .projets .box img {
@@ -449,14 +455,14 @@
   background-image: url("../img/vincent-pic.jpg");
   background-size: cover; }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .team .columns .column {
     max-width: 100%;
     padding: 2rem !important; }
   .team {
     margin-top: 5em; }
     .team .title_section {
-      margin-left: 3em; } }
+      margin-left: 2em; } }
 
 .contact form {
   max-width: 70vw;
@@ -514,14 +520,14 @@
 .contact .fill:hover:before {
   top: 0; }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .contact {
     margin-top: 5em; }
     .contact form {
       max-width: 90vw;
       width: 85%; }
     .contact .title_section {
-      margin-left: 3em; } }
+      margin-left: 2em; } }
 
 footer {
   width: 100vw; }
@@ -585,7 +591,7 @@ footer {
   bottom: 0;
   left: 0; }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   footer {
     margin-top: 4em;
     padding-top: 1em;
@@ -599,6 +605,9 @@ footer {
       bottom: initial;
       left: initial;
       margin-bottom: 3em; }
+      footer .footer-left img {
+        max-width: 200px;
+        border-right: none; }
     footer .footer-right {
       position: relative;
       width: 90%;
@@ -786,3 +795,7 @@ a {
     height: 80vh;
     display: flex;
     align-items: center; } }
+
+@media (max-width: 500px) {
+  .wave {
+    width: 30%; } }

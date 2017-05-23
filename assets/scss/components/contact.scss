@@ -58,7 +58,7 @@
     }
 }
 
-@media #{$mobile} {
+@media #{$tablet} {
     .contact {
         margin-top: 5em;
         form {
@@ -66,7 +66,7 @@
             width: 85%;
         }
         .title_section {
-            margin-left: 3em;
+            margin-left: 2em;
         }
     }
 }

@@ -42,7 +42,7 @@
 }
 
 
-@media #{$mobile} {
+@media #{$tablet} {
     .team .columns .column {
         max-width: 100%;
         padding: 2rem !important;
@@ -51,7 +51,7 @@
     .team {
         margin-top: 5em;
         .title_section {
-            margin-left: 3em;
+            margin-left: 2em;
         }
     }
 }

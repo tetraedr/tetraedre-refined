@@ -74,7 +74,7 @@ footer {
     left: 0;
 }
 
-@media #{$mobile} {
+@media #{$tablet} {
     footer {
         margin-top: 4em;
         padding-top: 1em;
@@ -89,6 +89,11 @@ footer {
             bottom: initial;
             left: initial;
             margin-bottom: 3em;
+
+            img {
+                max-width: 200px;
+                border-right: none;
+            }
         }
         .footer-right {
             position: relative;

@@ -5,7 +5,7 @@ var gulp        = require('gulp'),
     rename      = require('gulp-rename'),
     sassGlob    = require('gulp-sass-glob'),
     plumber     = require('gulp-plumber'),
-    browserSync = require('browser-sync').create(),
+    browserSync = require('browser-sync').create();
 
 gulp.task('wiredep', function () {
   gulp.src('*.html')

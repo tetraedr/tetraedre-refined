@@ -72,6 +72,7 @@
     .nav-right ul li:last-child {
       margin-right: 0em; }
 
+/* MEDIA QUERIES */
 @media (min-width: 1000px) {
   .hero-body {
     padding-left: 3em;
@@ -177,6 +178,7 @@
     .nav_symbol li:first-child {
       margin-right: 0px; }
 
+/* MEDIA QUERIES */
 @media (max-width: 769px) {
   .skills .list_expertise {
     flex-direction: row; } }
@@ -414,6 +416,7 @@
     height: 2em;
     width: 100%; }
 
+/* MEDIA QUERIES */
 @media (max-width: 769px) {
   .projets .columns {
     max-width: none;
@@ -463,6 +466,7 @@
   background-image: url("../img/vincent-pic.jpg");
   background-size: cover; }
 
+/* MEDIA QUERIES */
 @media (max-width: 769px) {
   .team .columns .column {
     max-width: 90%;
@@ -528,6 +532,7 @@
 .contact .fill:hover:before {
   top: 0; }
 
+/* MEDIA QUERIES */
 @media (max-width: 769px) {
   .contact {
     margin-top: 5em; }
@@ -552,10 +557,11 @@ footer {
     padding: 1em; }
     footer .footer-left img {
       width: 50%;
+      min-width: 200px;
       padding-right: 2em;
       border-right: 1px solid #cccccc; }
     footer .footer-left ul {
-      margin-left: 0em;
+      margin-left: 2em;
       margin-right: 0em;
       margin-top: 0em; }
   footer .footer-right {
@@ -591,6 +597,7 @@ footer {
   align-items: center;
   padding: 5% 10% 0% 10%; }
 
+/* MEDIA QUERIES */
 @media (max-width: 769px) {
   footer {
     position: relative;
@@ -627,10 +634,33 @@ footer {
     right: 5em !important;
     top: 1em !important; }
 
+.webp .container-header-img-mutualab {
+  background-image: url("../img/webp/header-mutualab.webp"); }
+
+.webp .container-header-img-freelance {
+  background-image: url("../img/webp/header-freelance.webp"); }
+
+.webp .container-header-img-norauto {
+  background-image: url("../img/webp/header-norauto.webp"); }
+
+.webp .container-header-img-optimizme {
+  background-image: url("../img/webp/header-optimizme.webp"); }
+
+.no-webp .container-header-img-mutualab {
+  background-image: url("../img/header-mutualab.jpg"); }
+
+.no-webp .container-header-img-freelance {
+  background-image: url("../img/header-freelance.jpg"); }
+
+.no-webp .container-header-img-norauto {
+  background-image: url("../img/header-norauto.jpg"); }
+
+.no-webp .container-header-img-optimizme {
+  background-image: url("../img/header-optimizme.jpg"); }
+
 .container-header-img-mutualab {
   width: 100vw;
   height: 80vh;
-  background-image: url("../img/header-mutualab.jpg");
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -641,7 +671,6 @@ footer {
 .container-header-img-freelance {
   width: 100vw;
   height: 80vh;
-  background-image: url("../img/header-freelance.jpg");
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -652,7 +681,6 @@ footer {
 .container-header-img-norauto {
   width: 100vw;
   height: 80vh;
-  background-image: url("../img/header-norauto.jpg");
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -663,7 +691,6 @@ footer {
 .container-header-img-optimizme {
   width: 100vw;
   height: 80vh;
-  background-image: url("../img/header-optimizme.jpg");
   background-size: cover;
   background-position: center;
   position: fixed;
@@ -745,6 +772,7 @@ footer {
 .body_project {
   overflow-x: hidden; }
 
+/* MEDIA QUERIES */
 @media (max-width: 500px) {
   .container-content-project {
     padding: 1em; }

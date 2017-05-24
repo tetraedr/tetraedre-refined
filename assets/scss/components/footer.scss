@@ -14,11 +14,12 @@ footer {
         padding: 1em;
         img {
             width: 50%;
+            min-width: 200px;
             padding-right: 2em;
             border-right: 1px solid lighten(#000, 80%);
         }
         ul {
-            margin-left: 0em;
+            margin-left: 2em;
             margin-right: 0em;
             margin-top: 0em;
         }

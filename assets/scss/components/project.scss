@@ -9,10 +9,39 @@
     }
 }
 
+.webp {
+    .container-header-img-mutualab {
+        background-image: url('../img/webp/header-mutualab.webp');
+    }
+    .container-header-img-freelance {
+        background-image: url('../img/webp/header-freelance.webp');
+    }
+    .container-header-img-norauto {
+        background-image: url('../img/webp/header-norauto.webp');
+    }
+    .container-header-img-optimizme {
+        background-image: url('../img/webp/header-optimizme.webp');
+    }
+}
+
+.no-webp {
+    .container-header-img-mutualab {
+        background-image: url('../img/header-mutualab.jpg');
+    }
+    .container-header-img-freelance {
+        background-image: url('../img/header-freelance.jpg');
+    }
+    .container-header-img-norauto {
+        background-image: url('../img/header-norauto.jpg');
+    }
+    .container-header-img-optimizme {
+        background-image: url('../img/header-optimizme.jpg');
+    }
+}
+
 .container-header-img-mutualab {
     width: 100vw;
     height: 80vh;
-    background-image: url('../img/header-mutualab.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -24,7 +53,6 @@
 .container-header-img-freelance {
     width: 100vw;
     height: 80vh;
-    background-image: url('../img/header-freelance.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -36,7 +64,6 @@
 .container-header-img-norauto {
     width: 100vw;
     height: 80vh;
-    background-image: url('../img/header-norauto.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -48,7 +75,6 @@
 .container-header-img-optimizme {
     width: 100vw;
     height: 80vh;
-    background-image: url('../img/header-optimizme.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -144,6 +170,7 @@
 .body_project {
     overflow-x: hidden;
 }
+
 
 /* MEDIA QUERIES */
 

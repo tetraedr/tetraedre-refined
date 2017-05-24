@@ -8,7 +8,7 @@ http://tetraed.re/
 
 - [X] Responsive
 - [X] Add Webp and fallback
-- [ ] Add Label to form for accessibility
+- [X] Add Label to form for accessibility
 - [ ] Ajouter contenu réel
 - [ ] Optimiser SEO
 - [ ] Optimiser site

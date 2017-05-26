@@ -458,11 +458,19 @@
   max-height: 25em;
   margin-bottom: 20px; }
 
-.martin {
+.webp .martin {
+  background-image: url("../img/webp/martin-pic.webp");
+  background-size: cover; }
+
+.webp .vincent {
+  background-image: url("../img/webp/vincent-pic.webp");
+  background-size: cover; }
+
+.no-webp .martin {
   background-image: url("../img/martin-pic.jpg");
   background-size: cover; }
 
-.vincent {
+.no-webp .vincent {
   background-image: url("../img/vincent-pic.jpg");
   background-size: cover; }
 

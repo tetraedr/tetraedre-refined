@@ -27,7 +27,9 @@ footer {
     .footer-right {
         position: absolute;
         bottom: 2em;
-        right: 2em;
+        //right: 2em;
+        left: calc(50% - 125px);
+        width: 300px;
         z-index: 5;
         padding: 1em;
         ul {

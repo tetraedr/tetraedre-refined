@@ -159,7 +159,7 @@
     opacity: 1; }
   .container_logo_corner_right ul {
     position: absolute;
-    top: 0;
+    top: 1em;
     right: 4em;
     opacity: 0;
     transition: all 250ms ease-in-out; }
@@ -578,7 +578,8 @@ footer {
   footer .footer-right {
     position: absolute;
     bottom: 2em;
-    right: 2em;
+    left: calc(50% - 125px);
+    width: 300px;
     z-index: 5;
     padding: 1em; }
     footer .footer-right ul {

@@ -20,8 +20,7 @@
   flex: 1; }
 
 canvas {
-  background-color: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  background-blend-mode: hard-light; }
+  opacity: 1; }
 
 .hero-img {
   width: 100%;

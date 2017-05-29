@@ -626,9 +626,12 @@ footer {
       bottom: initial;
       left: initial;
       margin-bottom: 3em; }
+      footer .footer-left ul {
+        margin-left: -2em; }
       footer .footer-left img {
         max-width: 200px;
-        border-right: none; }
+        border-right: none;
+        padding-right: 3em; }
     footer .footer-right {
       position: relative;
       width: 90%;

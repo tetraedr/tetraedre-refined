@@ -86,9 +86,13 @@ footer {
             bottom: initial;
             left: initial;
             margin-bottom: 3em;
+            ul {
+                margin-left: -2em;
+            }
             img {
                 max-width: 200px;
                 border-right: none;
+                padding-right: 3em;
             }
         }
         .footer-right {

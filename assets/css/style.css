@@ -51,7 +51,8 @@
   height: 30vh; }
 
 .logo-hero {
-  width: 30%; }
+  width: 30%;
+  opacity: .8; }
 
 .title-hero {
   font-size: 4em;

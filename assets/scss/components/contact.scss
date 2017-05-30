@@ -1,5 +1,24 @@
 @import "../vars.scss";
 .contact {
+    .field:not(:last-child) {
+        margin-bottom: 0rem !important;
+    }
+    .half-input {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5em;
+        .field {
+            flex: 1;
+            &:first-child {
+                margin-right: 1em;
+            }
+        }
+        .obligatory {
+            flex: 2;
+            text-align: right;
+            opacity: .7;
+        }
+    }
     form {
         max-width: 70vw;
         width: 60%;
@@ -42,7 +61,7 @@
     }
     .fill:hover {
         color: #FFF;
-        border: 2px $darkgrey solid;
+        border: 1px $darkgrey solid;
     }
     .fill:before {
         content: "";
@@ -59,6 +78,7 @@
         top: 0;
     }
 }
+
 
 /* MEDIA QUERIES */
 

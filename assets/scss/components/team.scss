@@ -6,11 +6,10 @@
     .columns {
         max-width: 100%;
         justify-content: space-between;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         align-items: stretch;
         .column {
             max-width: 46%;
-
             .title {
                 margin-bottom: .75em !important;
             }
@@ -29,25 +28,36 @@
     margin-bottom: 20px;
 }
 
-.martin {
-    background-image: url('../img/martin-pic.jpg');
-    background-size: cover;
+.webp {
+    .martin {
+        background-image: url('../img/webp/martin-pic.webp');
+        background-size: cover;
+    }
+    .vincent {
+        background-image: url('../img/webp/vincent-pic.webp');
+        background-size: cover;
+    }
 }
 
-.vincent {
-    background-image: url('../img/vincent-pic.jpg');
-    background-size: cover;
+.no-webp {
+    .martin {
+        background-image: url('../img/martin-pic.jpg');
+        background-size: cover;
+    }
+    .vincent {
+        background-image: url('../img/vincent-pic.jpg');
+        background-size: cover;
+    }
 }
+
 
 /* MEDIA QUERIES */
-
 
 @media #{$tablet} {
     .team .columns .column {
         max-width: 90%;
         margin: 0 auto;
     }
-
     .team {
         margin-top: 5em;
         .title_section {

@@ -51,10 +51,10 @@
   height: 30vh; }
 
 .logo-hero {
-  width: 30%; }
+  width: 30%;
+  opacity: .8; }
 
 .title-hero {
-  font-size: 4em;
   color: #363636;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -79,11 +79,21 @@
     padding-right: 3em; }
   .hero-img {
     width: 100%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .title-hero {
+    font-size: 3em; } }
 
 @media (max-width: 500px) {
   .hero-body {
     padding: 2rem 1.5rem !important; } }
+
+@media (min-width: 1192px) {
+  .title-hero {
+    font-size: 3.5em; } }
+
+@media (min-width: 1384px) {
+  .title-hero {
+    font-size: 4em; } }
 
 .skills .list_expertise {
   margin-top: 5em;
@@ -145,7 +155,10 @@
   position: absolute;
   z-index: 9999;
   right: 2em;
-  top: 4em;
+  top: 3em;
+  display: flex;
+  align-items: center;
+  height: 3em;
   width: 3%;
   transition: all 250ms ease-in-out; }
   .container_logo_corner_right img {
@@ -158,7 +171,6 @@
     opacity: 1; }
   .container_logo_corner_right ul {
     position: absolute;
-    top: 0;
     right: 4em;
     opacity: 0;
     transition: all 250ms ease-in-out; }
@@ -327,6 +339,9 @@
   -o-transition: all 0.29s ease;
   transition: all 0.29s ease;
   padding: 8em 2em; }
+  .container-projet p {
+    text-align: center;
+    max-width: 75%; }
 
 .logo-projet {
   width: 50%; }
@@ -434,7 +449,15 @@
 
 @media (min-width: 1000px) {
   .projets .box img {
-    width: 50% !important; } }
+    width: 50% !important; }
+  .icon-mutualab {
+    bottom: -14vh;
+    left: -11vh; } }
+
+@media (min-width: 1192px) {
+  .icon-mutualab {
+    bottom: -20vh;
+    left: -15vh; } }
 
 .team .title_section {
   margin-bottom: 2em; }
@@ -458,11 +481,19 @@
   max-height: 25em;
   margin-bottom: 20px; }
 
-.martin {
+.webp .martin {
+  background-image: url("../img/webp/martin-pic.webp");
+  background-size: cover; }
+
+.webp .vincent {
+  background-image: url("../img/webp/vincent-pic.webp");
+  background-size: cover; }
+
+.no-webp .martin {
   background-image: url("../img/martin-pic.jpg");
   background-size: cover; }
 
-.vincent {
+.no-webp .vincent {
   background-image: url("../img/vincent-pic.jpg");
   background-size: cover; }
 
@@ -475,6 +506,22 @@
     margin-top: 5em; }
     .team .title_section {
       margin-left: 2em; } }
+
+.contact .field:not(:last-child) {
+  margin-bottom: 0rem !important; }
+
+.contact .half-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5em; }
+  .contact .half-input .field {
+    flex: 1; }
+    .contact .half-input .field:first-child {
+      margin-right: 1em; }
+  .contact .half-input .obligatory {
+    flex: 2;
+    text-align: right;
+    opacity: .7; }
 
 .contact form {
   max-width: 70vw;
@@ -518,7 +565,7 @@
 
 .contact .fill:hover {
   color: #FFF;
-  border: 2px #363636 solid; }
+  border: 1px #363636 solid; }
 
 .contact .fill:before {
   content: "";
@@ -618,9 +665,12 @@ footer {
       bottom: initial;
       left: initial;
       margin-bottom: 3em; }
+      footer .footer-left ul {
+        margin-left: -2em; }
       footer .footer-left img {
         max-width: 200px;
-        border-right: none; }
+        border-right: none;
+        padding-right: 3em; }
     footer .footer-right {
       position: relative;
       width: 90%;
@@ -668,7 +718,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-header-img-freelance {
   width: 100vw;
@@ -678,7 +729,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-header-img-norauto {
   width: 100vw;
@@ -688,7 +740,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-header-img-optimizme {
   width: 100vw;
@@ -698,7 +751,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-back-arrow-project {
   top: 4em;
@@ -717,7 +771,8 @@ footer {
 .container-content-project {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5em; }
+  padding: 5em;
+  margin-bottom: 7em; }
 
 .container-header-project {
   padding-bottom: 1.5em;

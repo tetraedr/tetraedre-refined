@@ -24,9 +24,11 @@
         <div class="section hero">
             <div class="hero-body">
                 <div class="hero-wrap-desktop is-hidden-touch">
-                    
                     <div class="container-hero-img">
-                        <img src="assets/img/bg-hero.png" class="hero-img" data-src="assets/img/logo-dot-color.png"></img>
+                        <div class="block block-1"></div>
+                        <div class="block block-2"></div>
+                        <div class="block block-3"></div>
+                        <img src="assets/img/bg-hero.png" class="hero-img" data-src="assets/img/test-halftone.png"></img>
                     </div>
                     <div class="container-logo">
                         <div class="push-left-5">
@@ -342,6 +344,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript " src="assets/js/projects.js "></script>
     <script type="text/javascript " src="assets/js/breathing-halftone.min.js "></script>
+    <!--<script src="node_modules/trial-js/trial.min.js"></script>
+    <script type="text/javascript " src="assets/js/halftone.js "></script>-->
     <script src="https://cdn.chatkwik.com/cdn/widget/5d7471999c65d64772d3a324818f2ae6d6367a78143578b2cc4b69a6a1049fcb" type="text/javascript">
     </script>
     <script>
@@ -365,20 +369,20 @@
     var img = $('.hero-img')[0];
 
     new BreathingHalftone(img, {
-        dotSize: 1/100,
-        dotSizeThreshold: 0.05,
+        dotSize: 1/50,
+        dotSizeThreshold: 0.01,
         initVelocity: 0.02,
-        oscPeriod: 3,
-        oscAmplitude: 0.2,
+        oscPeriod: 10,
+        oscAmplitude: 0,
         isAdditive: false,
         isRadial: false,
         channels: [ 'red', 'green', 'blue' ],
-        isChannelLens: true,
+        isChannelLens: false,
         friction: 0.06,
-        hoverDiameter: 0.3,
+        hoverDiameter: 0.2,
         hoverForce: -0.04,
-        activeDiameter: 0.6,
-        activeForce: 0.01
+        activeDiameter: 2,
+        activeForce: -1
     });
     </script>
 </body>

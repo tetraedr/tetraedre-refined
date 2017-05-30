@@ -503,11 +503,16 @@
       margin-left: 2em; } }
 
 .contact .half-input {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .contact .half-input .field {
     flex: 1; }
     .contact .half-input .field:first-child {
       margin-right: 1em; }
+  .contact .half-input .obligatory {
+    flex: 2;
+    text-align: right;
+    opacity: .7; }
 
 .contact form {
   max-width: 70vw;

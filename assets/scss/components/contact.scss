@@ -2,11 +2,17 @@
 .contact {
     .half-input {
         display: flex;
+        align-items: center;
         .field {
             flex: 1;
             &:first-child {
                 margin-right: 1em;
             }
+        }
+        .obligatory {
+            flex: 2;
+            text-align: right;
+            opacity: .7;
         }
     }
     form {

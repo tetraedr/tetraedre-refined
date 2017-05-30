@@ -1,8 +1,12 @@
 @import "../vars.scss";
 .contact {
+    .field:not(:last-child) {
+        margin-bottom: 0rem !important;
+    }
     .half-input {
         display: flex;
         align-items: center;
+        margin-bottom: 1.5em;
         .field {
             flex: 1;
             &:first-child {
@@ -57,7 +61,7 @@
     }
     .fill:hover {
         color: #FFF;
-        border: 2px $darkgrey solid;
+        border: 1px $darkgrey solid;
     }
     .fill:before {
         content: "";

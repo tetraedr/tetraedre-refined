@@ -155,7 +155,10 @@
   position: absolute;
   z-index: 9999;
   right: 2em;
-  top: 4em;
+  top: 3em;
+  display: flex;
+  align-items: center;
+  height: 3em;
   width: 3%;
   transition: all 250ms ease-in-out; }
   .container_logo_corner_right img {
@@ -168,7 +171,6 @@
     opacity: 1; }
   .container_logo_corner_right ul {
     position: absolute;
-    top: 0;
     right: 4em;
     opacity: 0;
     transition: all 250ms ease-in-out; }
@@ -502,9 +504,13 @@
     .team .title_section {
       margin-left: 2em; } }
 
+.contact .field:not(:last-child) {
+  margin-bottom: 0rem !important; }
+
 .contact .half-input {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 1.5em; }
   .contact .half-input .field {
     flex: 1; }
     .contact .half-input .field:first-child {
@@ -556,7 +562,7 @@
 
 .contact .fill:hover {
   color: #FFF;
-  border: 2px #363636 solid; }
+  border: 1px #363636 solid; }
 
 .contact .fill:before {
   content: "";
@@ -758,7 +764,8 @@ footer {
 .container-content-project {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5em; }
+  padding: 5em;
+  margin-bottom: 7em; }
 
 .container-header-project {
   padding-bottom: 1.5em;

@@ -71,7 +71,10 @@
     position: absolute;
     z-index: 9999;
     right: 2em;
-    top: 4em;
+    top: 3em;
+    display: flex;
+    align-items: center;
+    height: 3em;
     width: 3%;
     transition: all 250ms ease-in-out;
 
@@ -93,7 +96,6 @@
 
     ul {
         position: absolute;
-        top: 0;
         right: 4em;
         opacity: 0;
         transition: all 250ms ease-in-out;

@@ -715,7 +715,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-header-img-freelance {
   width: 100vw;
@@ -725,7 +726,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-header-img-norauto {
   width: 100vw;
@@ -735,7 +737,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-header-img-optimizme {
   width: 100vw;
@@ -745,7 +748,8 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #F3F6F6; }
 
 .container-back-arrow-project {
   top: 4em;

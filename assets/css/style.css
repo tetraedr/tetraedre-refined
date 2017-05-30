@@ -507,9 +507,6 @@
     .team .title_section {
       margin-left: 2em; } }
 
-.contact .field:not(:last-child) {
-  margin-bottom: 0rem !important; }
-
 .contact .half-input {
   display: flex;
   align-items: center;
@@ -589,7 +586,38 @@
       max-width: 90vw;
       width: 85%; }
     .contact .title_section {
-      margin-left: 2em; } }
+      margin-left: 2em; }
+    .contact .field {
+      margin-bottom: 20px; }
+    .contact .half-input {
+      display: initial;
+      align-items: center;
+      margin-bottom: 0; }
+      .contact .half-input .field {
+        flex: 1; }
+        .contact .half-input .field:first-child {
+          margin-right: 0;
+          margin-bottom: 20px; }
+      .contact .half-input .obligatory {
+        flex: 2;
+        opacity: .7;
+        text-align: left; } }
+
+@media (min-width: 1000px) {
+  .contact .field:not(:last-child) {
+    margin-bottom: 0rem !important; }
+  .contact .half-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em; }
+    .contact .half-input .field {
+      flex: 1; }
+      .contact .half-input .field:first-child {
+        margin-right: 1em; }
+    .contact .half-input .obligatory {
+      flex: 2;
+      text-align: right;
+      opacity: .7; } }
 
 footer {
   width: 100vw; }

@@ -9,7 +9,7 @@ http://tetraed.re/
 - [X] Responsive
 - [X] Add Webp and fallback
 - [X] Add Label to form for accessibility
-- [ ] Add chat linked to Slack (on chatbot branch) ?
+- [X] Add chat linked to Slack (on chatbot branch)
 - [ ] Ajouter contenu réel
 - [ ] Optimiser SEO
 - [ ] Optimiser site

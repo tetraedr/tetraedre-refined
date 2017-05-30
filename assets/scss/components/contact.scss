@@ -1,8 +1,5 @@
 @import "../vars.scss";
 .contact {
-    .field:not(:last-child) {
-        margin-bottom: 0rem !important;
-    }
     .half-input {
         display: flex;
         align-items: center;
@@ -91,6 +88,50 @@
         }
         .title_section {
             margin-left: 2em;
+        }
+        .field {
+            margin-bottom: 20px;
+        }
+        .half-input {
+            display: initial;
+            align-items: center;
+            margin-bottom: 0;
+            .field {
+                flex: 1;
+                &:first-child {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+            .obligatory {
+                flex: 2;
+                opacity: .7;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media #{$desktop} {
+    .contact {
+        .field:not(:last-child) {
+            margin-bottom: 0rem !important;
+        }
+        .half-input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
+            .field {
+                flex: 1;
+                &:first-child {
+                    margin-right: 1em;
+                }
+            }
+            .obligatory {
+                flex: 2;
+                text-align: right;
+                opacity: .7;
+            }
         }
     }
 }

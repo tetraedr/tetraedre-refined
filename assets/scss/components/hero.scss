@@ -69,7 +69,6 @@
 }
 
 .title-hero {
-    font-size: 4em;
     color: $darkgrey;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
@@ -109,10 +108,26 @@
         width: 100%;
         margin-right: 0;
     }
+
+    .title-hero {
+        font-size: 3em;
+    }
 }
 
 @media #{$mobile} {
     .hero-body {
             padding: 2rem 1.5rem !important;
+    }
+}
+
+@media #{$widescreen} {
+    .title-hero {
+        font-size: 3.5em;
+    }
+}
+
+@media #{$fullhd} {
+    .title-hero {
+        font-size: 4em;
     }
 }

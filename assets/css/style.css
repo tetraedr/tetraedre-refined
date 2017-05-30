@@ -55,7 +55,6 @@
   opacity: .8; }
 
 .title-hero {
-  font-size: 4em;
   color: #363636;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -80,11 +79,21 @@
     padding-right: 3em; }
   .hero-img {
     width: 100%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .title-hero {
+    font-size: 3em; } }
 
 @media (max-width: 500px) {
   .hero-body {
     padding: 2rem 1.5rem !important; } }
+
+@media (min-width: 1192px) {
+  .title-hero {
+    font-size: 3.5em; } }
+
+@media (min-width: 1384px) {
+  .title-hero {
+    font-size: 4em; } }
 
 .skills .list_expertise {
   margin-top: 5em;
@@ -435,7 +444,15 @@
 
 @media (min-width: 1000px) {
   .projets .box img {
-    width: 50% !important; } }
+    width: 50% !important; }
+  .icon-mutualab {
+    bottom: -14vh;
+    left: -11vh; } }
+
+@media (min-width: 1192px) {
+  .icon-mutualab {
+    bottom: -20vh;
+    left: -15vh; } }
 
 .team .title_section {
   margin-bottom: 2em; }
@@ -484,6 +501,13 @@
     margin-top: 5em; }
     .team .title_section {
       margin-left: 2em; } }
+
+.contact .half-input {
+  display: flex; }
+  .contact .half-input .field {
+    flex: 1; }
+    .contact .half-input .field:first-child {
+      margin-right: 1em; }
 
 .contact form {
   max-width: 70vw;

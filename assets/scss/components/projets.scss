@@ -187,7 +187,7 @@
 }
 
 .shadow_btn {
-    position:absolute;
+    position: absolute;
     color: $darkgrey;
     margin-top: -37px;
     z-index: 0;
@@ -209,7 +209,6 @@
 }
 
 // Mutualab
-
 .icon-mutualab {
     position: absolute;
     bottom: -22em;
@@ -218,11 +217,9 @@
 }
 
 // Freelance Connection
-
 .container-freelance {
     opacity: 0;
 }
-
 
 .detail-freelance {
     position: absolute;
@@ -235,11 +232,9 @@
 }
 
 // Norauto
-
 .container-norauto {
     opacity: 0;
 }
-
 
 .detail-norauto {
     position: absolute;
@@ -260,11 +255,9 @@
 }
 
 // Optimizme
-
 .container-optimizme {
     opacity: 0;
 }
-
 
 .detail-optimizme {
     position: absolute;
@@ -289,6 +282,7 @@
     }
 }
 
+
 /* MEDIA QUERIES */
 
 @media #{$tablet} {
@@ -296,14 +290,12 @@
         .columns {
             max-width: none;
             width: 90%;
-
             .box {
                 img {
                     width: 50%;
                 }
             }
         }
-
     }
 }
 
@@ -330,5 +322,16 @@
                 width: 50% !important;
             }
         }
+    }
+    .icon-mutualab {
+        bottom: -14vh;
+        left: -11vh;
+    }
+}
+
+@media #{$widescreen} {
+    .icon-mutualab {
+        bottom: -20vh;
+        left: -15vh;
     }
 }
